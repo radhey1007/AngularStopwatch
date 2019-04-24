@@ -22,7 +22,7 @@ export class AppComponent {
       if(this.seconds <= 9){
         this.seconds = '0' + this.seconds;
       }      
-      if(this.seconds == 10) {
+      if(this.seconds == 59) {
         this.minutes++;
         this.seconds='00';
         if(this.minutes <= 9){
@@ -30,7 +30,7 @@ export class AppComponent {
         }
       }
       
-      if(this.minutes == 2){
+      if(this.minutes == 59){
         this.hours++;
         this.minutes='0' + 0;
         this.seconds='0' + 0;
