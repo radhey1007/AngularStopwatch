@@ -1,0 +1,17 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to Radhey Timer DEMO  </h1>
+</div>
+
+<h2 *ngIf="flag !=0">{{hours}}  : {{minutes}} : {{ seconds}}</h2>
+
+
+
+<button (click)='startTimer()'>Start Timer</button>
+<button (click)='pauseTimer()'>Pause</button>
+
+
+<p>{{timeLeft}} Seconds Left....</p>
+
+<router-outlet></router-outlet>
